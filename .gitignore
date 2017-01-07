@@ -1,0 +1,6 @@
+*.swp
+cv.pdf
+*.log
+*.aux
+*.out
+*.synctex.gz

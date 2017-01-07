@@ -1,0 +1,116 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Firas}{Abuzaid}
+\title{Curriculum Vitae}                                     % optional, remove / comment the line if not wanted
+\address{353 Serra Mall, Gates 432}{Stanford, CA 94309}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(214)~536~4585}                  % optional, remove / comment the line if not wanted
+\phone[fixed]{+1~(775)~238~3228}                   % optional, remove / comment the line if not wanted
+\email{fabuzaid@cs.stanford.edu}                      % optional, remove / comment the line if not wanted
+\homepage{github.com/fabuzaid21}                   % optional, remove / comment the line if not wanted
+\photo[60pt][0.4pt]{profile}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+\makecvtitle
+
+\vspace{-12mm}
+
+\section{Education}
+\cventry{2016-present}{Ph.D., Computer Science}{}{Stanford University}{}{Advisors: Matei Zaharia and Peter Bailis}
+\cventry{2015-2016}{Ph.D., Course VI-II}{}{Massachussets Institute of Technology}{}{Advisors: Sam Madden and Matei Zaharia}
+\cventry{2013--2015}{M.S., Computer Science}{Stanford University}{}{}{Advisor: Christopher Ré
+\begin{itemize}
+\item Concentrations: Artificial Intelligence, Information
+\end{itemize}}
+\cventry{2009--2013}{B.S., Computer Science}{Stanford University}{}{}{Concentration: Information
+\begin{itemize}
+\item Phi Beta Kappa, Tau Beta Pi
+\end{itemize}
+}
+\section{Publications}
+\cventry{2016}{{\normalfont F. Abuzaid, J. Bradley, F. Liang, A. Feng, L. Yang, M. Zaharia, and A. Talwalkar.} Yggdrasil: An Optimized System for Training Deep Decision Trees at Scale. {\normalfont NIPS 2016.}}{}{}{}{}
+\cventry{2015}{{\normalfont S. Hadjis, F. Abuzaid, C. Zhang, and C. Ré.} Caffe con Troll: Shallow Ideas to Speed Up Deep Learning. {\normalfont DanaC: Workshop on data analytics at scale.}}{}{}{}{}
+\section{Work Experience}
+\subsection{Research}
+\cventry{04/2014--06/2015}{Research Assistant}{Stanford InfoLab}{Prof. Christopher Ré}{}{
+\begin{itemize}
+\item Developed Caffe con Troll, CPU optimizer for Caffe. Resulted in publication
+\begin{itemize}
+\item \href{http://github.com/HazyResearch/CaffeConTroll}{\underline{http://github.com/HazyResearch/CaffeConTroll}}
+\end{itemize}
+\item Worked on multi-round Pregel-like join algorithm for distributed datasets
+\item \textbf{Technologies and Libraries}: Scala, Spark, SparkSQL, Hive, YARN, Hadoop/HDFS
+\end{itemize}
+}
+\cventry{01/2014--03/2014}{Independent Research Project}{Stanford AI Lab}{Prof. Andrew Ng}{}{
+\begin{itemize}
+\item Worked on re-alignment improvements for deep neural networks on speech recognition systems
+\item \textbf{Technologies and Libraries}: C++, Python, Kaldi, Google Web Speech API
+\end{itemize}
+}
+\subsection{Industry}
+\cventry{06/2012--09/2012}{Android Engineer Intern}{Clinkle}{Mountain View, CA}{}{Implemented initial User Interface for the Clinkle Android application}
+\cventry{06/2011--09/2011}{Software Engineer Intern}{Lab126}{Cupertino, CA}{}{Developed QuickSettings app for Kindle Fire; debugged, refined UI/UX for other system apps on Android 2.3.3}
+\subsection{Teaching}
+\cventry{2014--present}{Awards}{}{}{}{
+\begin{itemize}
+\item {Recipient of the \href{https://teachingcommons.stanford.edu/grants-awards/teaching-awards/centennial-teaching-assistant-awards}{\underline{2014 Centennial Teaching Assistant Award}}}
+\end{itemize}
+}
+\cventry{2014--present}{Instructor}{Stanford Computer Science Department}{}{}{
+\begin{itemize}
+\item {\textbf{CS145}, \emph{Introduction to Databases}, Co-Instructor with Perth Charernwatttanagul, Summer 2014}
+\end{itemize}
+}
+\cventry{2014--present}{Mentor in Teaching Fellow}{Stanford Computer Science Deparmtnet}{}{}{Responsible for assisting and mentoring new Teaching Assistants for the CS department}
+\cventry{2013--present}{Teaching Assistant}{Stanford Computer Science Department}{}{}{
+\begin{itemize}
+\item {\textbf{CS142}, \emph{Web Applications}, Profs. John Ousterhout and Phillip Levis, Spring 2013 - Spring 2014}
+\item {\textbf{CS145}, \emph{Introduction to Databases}, Profs. Christopher Ré and Jennifer Widom, Fall 2013 - Fall 2014}
+\end{itemize}
+}
+\cventry{2011--2012}{CS198 Section Leader}{Stanford Computer Science Department}{}{}{Responsible for leading weekly discussion sections to complement lecture for introductory Computer Science classes -- CS106A, B, and X}
+\subsection{Other}
+\cventry{01/2014--present}{Master's Student Liaison}{Stanford Computer Science Department}{}{}{Responsible for communicating and voicing students' feedback and concerns to CS faculty}
+\cventry{2011--2012}{Academic Theme Associate}{Stanford Residential Education}{}{}{Residential staff position -- responsible for creating and planning theme-related programming for the \href{http://studentaffairs.stanford.edu/resed/profiles/theme/crothers}{Crothers Global Citizenship dorm}}
+
+\end{document}
+%% end of file `template.tex'.
