@@ -1,6 +1,3 @@
 *.swp
 cv.pdf
-*.log
-*.aux
-*.out
-*.synctex.gz
+latex.out/
